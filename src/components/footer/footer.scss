@@ -2,12 +2,15 @@
 
 .footer {
   width: 100%;
+  padding: 10px 0px;
   display: flex;
+  position: absolute;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3px;
-  background-color: rgba($color: $primaryColor, $alpha: 0.1);
+  background-color: rgba($color: $secondaryColor, $alpha: 0.6);
   backdrop-filter: blur(10px);
   box-shadow: -2px -2px 10px #101010;
 

@@ -1,0 +1,53 @@
+@import "../../common/colors.scss";
+
+.cardItem {
+  background-color: rgba($color: $secondaryColor, $alpha: 0.6);
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:hover .cardTopSide img {
+    transition: 0.3s;
+    filter: brightness(0.8);
+  }
+
+  .cardWrapper {
+    .cardTopSide {
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .cardBottomSide {
+      width: 100%;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & .movieName {
+        color: $fontPrimaryColor;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      & .movieYear {
+        color: $fontPrimaryColor;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
